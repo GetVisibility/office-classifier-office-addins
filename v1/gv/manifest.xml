@@ -10,8 +10,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="GV Synergy"/>
   <Description DefaultValue="Getvisibility Synergy Office Add-in."/>
-  <IconUrl DefaultValue="https://localhost:4300/v1/gv/assets/images/ribbon-icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:4300/v1/gv/assets/images/ribbon-icon-64.png"/>
+  <IconUrl DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/ribbon-icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/ribbon-icon-64.png"/>
   <SupportUrl DefaultValue="https://www.getvisibility.com"/>
   <AppDomains>
     <AppDomain>getvisibility.com</AppDomain>
@@ -162,29 +162,29 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.ribbon.16" DefaultValue="https://localhost:4300/v1/gv/assets/images/ribbon-icon-16.png"/>
-        <bt:Image id="Icon.ribbon.32" DefaultValue="https://localhost:4300/v1/gv/assets/images/ribbon-icon-32.png"/>
-        <bt:Image id="Icon.ribbon.80" DefaultValue="https://localhost:4300/v1/gv/assets/images/ribbon-icon-80.png"/>
+        <bt:Image id="Icon.ribbon.16" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/ribbon-icon-16.png"/>
+        <bt:Image id="Icon.ribbon.32" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/ribbon-icon-32.png"/>
+        <bt:Image id="Icon.ribbon.80" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/ribbon-icon-80.png"/>
 
-        <bt:Image id="Icon.class.brand.gold.16" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_brand_gold16.png"/>
-        <bt:Image id="Icon.class.brand.gold.32" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_brand_gold32.png"/>
-        <bt:Image id="Icon.class.brand.gold.80" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_brand_gold80.png"/>
+        <bt:Image id="Icon.class.brand.gold.16" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_brand_gold16.png"/>
+        <bt:Image id="Icon.class.brand.gold.32" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_brand_gold32.png"/>
+        <bt:Image id="Icon.class.brand.gold.80" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_brand_gold80.png"/>
 
-        <bt:Image id="Icon.class.internal.16" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_internal16.png"/>
-        <bt:Image id="Icon.class.internal.32" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_internal32.png"/>
-        <bt:Image id="Icon.class.internal.80" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_internal80.png"/>
+        <bt:Image id="Icon.class.internal.16" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_internal16.png"/>
+        <bt:Image id="Icon.class.internal.32" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_internal32.png"/>
+        <bt:Image id="Icon.class.internal.80" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_internal80.png"/>
 
-        <bt:Image id="Icon.class.confidential.16" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_confidential16.png"/>
-        <bt:Image id="Icon.class.confidential.32" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_confidential32.png"/>
-        <bt:Image id="Icon.class.confidential.80" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_confidential80.png"/>
+        <bt:Image id="Icon.class.confidential.16" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_confidential16.png"/>
+        <bt:Image id="Icon.class.confidential.32" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_confidential32.png"/>
+        <bt:Image id="Icon.class.confidential.80" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_confidential80.png"/>
 
-        <bt:Image id="Icon.class.public.16" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_public16.png"/>
-        <bt:Image id="Icon.class.public.32" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_public32.png"/>
-        <bt:Image id="Icon.class.public.80" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_public80.png"/>
+        <bt:Image id="Icon.class.public.16" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_public16.png"/>
+        <bt:Image id="Icon.class.public.32" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_public32.png"/>
+        <bt:Image id="Icon.class.public.80" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_public80.png"/>
 
-        <bt:Image id="Icon.class.not.set.16" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_not_set16.png"/>
-        <bt:Image id="Icon.class.not.set.32" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_not_set32.png"/>
-        <bt:Image id="Icon.class.not.set.80" DefaultValue="https://localhost:4300/v1/gv/assets/images/classification_not_set80.png"/>
+        <bt:Image id="Icon.class.not.set.16" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_not_set16.png"/>
+        <bt:Image id="Icon.class.not.set.32" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_not_set32.png"/>
+        <bt:Image id="Icon.class.not.set.80" DefaultValue="https://getvisibility.github.io/office-classifier-office-addins/v1/gv/assets/images/classification_not_set80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
