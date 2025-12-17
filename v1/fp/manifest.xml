@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+  <Id>9717b5ca-a3c1-4855-a42d-442178d33c5a</Id>
+  <Version>1.0.1</Version>
+  <ProviderName>Forcepoint</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Forcepoint Classification"/>
+  <Description DefaultValue="Forcepoint Classification Office Add-in."/>
+  <IconUrl DefaultValue="https://localhost:4300/v1/fp/assets/images/ribbon-icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:4300/v1/fp/assets/images/ribbon-icon-64.png"/>
+  <SupportUrl DefaultValue="https://www.getvisibility.com"/>
+  <AppDomains>
+    <AppDomain>getvisibility.com</AppDomain>
+    <AppDomain>gvclient.local</AppDomain>
+    <AppDomain>gvclient.internal</AppDomain>
+    <AppDomain>localhost</AppDomain>
+    <AppDomain>https://localhost:10043</AppDomain>
+    <AppDomain>https://gvclient.local:20043</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Document"/>
+    <Host Name="Workbook"/>
+    <Host Name="Presentation"/>
+  </Hosts>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="SharedRuntime" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://gvclient.local:20043/office-addin/#/plugin/taskpane" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Document">
+        <Runtimes>
+          <Runtime resid="App.Url" lifetime="long" />
+        </Runtimes>
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="GetStarted.Title"/>
+            <Description resid="GetStarted.Description"/>
+            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+          </GetStarted>
+          <FunctionFile resid="App.Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="CommandsGroup">
+                <Label resid="CommandsGroup.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.ribbon.16"/>
+                  <bt:Image size="32" resid="Icon.ribbon.32"/>
+                  <bt:Image size="80" resid="Icon.ribbon.80"/>
+                </Icon>
+
+                <Control xsi:type="Button" id="ClassificationControl">
+                  <Label resid="TaskpaneButton.Label"/>
+                  <Supertip>
+                    <Title resid="TaskpaneButton.Label"/>
+                    <Description resid="TaskpaneButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.ribbon.16"/>
+                    <bt:Image size="32" resid="Icon.ribbon.32"/>
+                    <bt:Image size="80" resid="Icon.ribbon.80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>classifyContent</FunctionName>
+                  </Action>
+                  <Enabled>true</Enabled>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+      <Host xsi:type="Workbook">
+        <Runtimes>
+          <Runtime resid="App.Url" lifetime="long" />
+        </Runtimes>
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="GetStarted.Title"/>
+            <Description resid="GetStarted.Description"/>
+            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+          </GetStarted>
+          <FunctionFile resid="App.Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="CommandsGroup">
+                <Label resid="CommandsGroup.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.ribbon.16"/>
+                  <bt:Image size="32" resid="Icon.ribbon.32"/>
+                  <bt:Image size="80" resid="Icon.ribbon.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="ClassificationControl">
+                  <Label resid="TaskpaneButton.Label"/>
+                  <Supertip>
+                    <Title resid="TaskpaneButton.Label"/>
+                    <Description resid="TaskpaneButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.ribbon.16"/>
+                    <bt:Image size="32" resid="Icon.ribbon.32"/>
+                    <bt:Image size="80" resid="Icon.ribbon.80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>classifyContent</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+      <Host xsi:type="Presentation">
+        <Runtimes>
+          <Runtime resid="App.Url" lifetime="long" />
+        </Runtimes>
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="GetStarted.Title"/>
+            <Description resid="GetStarted.Description"/>
+            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+          </GetStarted>
+          <FunctionFile resid="App.Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="CommandsGroup">
+                <Label resid="CommandsGroup.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.ribbon.16"/>
+                  <bt:Image size="32" resid="Icon.ribbon.32"/>
+                  <bt:Image size="80" resid="Icon.ribbon.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="ClassificationControl">
+                  <Label resid="TaskpaneButton.Label"/>
+                  <Supertip>
+                    <Title resid="TaskpaneButton.Label"/>
+                    <Description resid="TaskpaneButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.ribbon.16"/>
+                    <bt:Image size="32" resid="Icon.ribbon.32"/>
+                    <bt:Image size="80" resid="Icon.ribbon.80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>classifyContent</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.ribbon.16" DefaultValue="https://localhost:4300/v1/fp/assets/images/ribbon-icon-16.png"/>
+        <bt:Image id="Icon.ribbon.32" DefaultValue="https://localhost:4300/v1/fp/assets/images/ribbon-icon-32.png"/>
+        <bt:Image id="Icon.ribbon.80" DefaultValue="https://localhost:4300/v1/fp/assets/images/ribbon-icon-80.png"/>
+
+        <bt:Image id="Icon.class.brand.gold.16" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_brand_gold16.png"/>
+        <bt:Image id="Icon.class.brand.gold.32" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_brand_gold32.png"/>
+        <bt:Image id="Icon.class.brand.gold.80" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_brand_gold80.png"/>
+
+        <bt:Image id="Icon.class.internal.16" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_internal16.png"/>
+        <bt:Image id="Icon.class.internal.32" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_internal32.png"/>
+        <bt:Image id="Icon.class.internal.80" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_internal80.png"/>
+
+        <bt:Image id="Icon.class.confidential.16" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_confidential16.png"/>
+        <bt:Image id="Icon.class.confidential.32" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_confidential32.png"/>
+        <bt:Image id="Icon.class.confidential.80" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_confidential80.png"/>
+
+        <bt:Image id="Icon.class.public.16" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_public16.png"/>
+        <bt:Image id="Icon.class.public.32" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_public32.png"/>
+        <bt:Image id="Icon.class.public.80" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_public80.png"/>
+
+        <bt:Image id="Icon.class.not.set.16" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_not_set16.png"/>
+        <bt:Image id="Icon.class.not.set.32" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_not_set32.png"/>
+        <bt:Image id="Icon.class.not.set.80" DefaultValue="https://localhost:4300/v1/fp/assets/images/classification_not_set80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+        <bt:Url id="App.Url" DefaultValue="https://gvclient.local:20043/office-addin/"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://gvclient.local:20043/office-addin/#/plugin/taskpane"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="GetStarted.Title" DefaultValue="Classify Document"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="Forcepoint"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Classify Document"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="GetStarted.Description" DefaultValue="Your Forcepoint Classification Office Add-in loaded successfully. Click the 'Classify Document' button on the home tab to classify your document."/>
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Classify Document"/>
+      </bt:LongStrings>
+    </Resources>
+    <EquivalentAddins>
+      <EquivalentAddin>
+        <ProgId>WordClassifier</ProgId>
+        <Type>COM</Type>
+      </EquivalentAddin>
+      <EquivalentAddin>
+        <ProgId>ExcelClassifier</ProgId>
+        <Type>COM</Type>
+      </EquivalentAddin>
+      <EquivalentAddin>
+        <ProgId>GVClient.Powerpoint</ProgId>
+        <Type>COM</Type>
+      </EquivalentAddin>
+    </EquivalentAddins>
+  </VersionOverrides>
+</OfficeApp>
